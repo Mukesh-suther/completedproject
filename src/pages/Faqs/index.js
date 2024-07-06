@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import circleimg from '/asset/images/circle@2x.jpg'
+import circleimg from './../../asset/images/circle@2x.jpg'
 import './faqs.css'
 const AccordionItem = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
