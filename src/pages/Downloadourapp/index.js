@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
-import applestore from './../../assets/images/apple-app-store-icon.png'
-import playstore from './../../assets/images/play-store.png'
-import amazonicon from './../../assets/images/AmazonAppStoreIcon.png'
-import windowstore from './../../assets/images/Windows-Store.png'
+import applestore from '/asset/images/apple-app-store-icon.png'
+import playstore from '/asset/images/play-store.png'
+import amazonicon from '/asset/images/AmazonAppStoreIcon.png'
+import windowstore from '/asset/images/Windows-Store.png'
 import './downloadoutapp.css'
 import { Link } from 'react-router-dom'
 function Downloadourapp() {

@@ -4,15 +4,15 @@ import "slick-carousel/slick/slick-theme.css";
 import "./home.css";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import banner1 from './../../assets/images/banner 1080-566px.png'
-import banner2 from './../../assets/images/banner 1080-566px.png'
-import banner3 from './../../assets/images/banner 1080-566px.png'
-import educationprogram1 from "./../../assets/images/front-view-children-playing-together-kindergarten@2x (1).jpg";
-import educationprogram2 from "./../../assets/images/pexels-cottonbro-3662628@2x.jpg";
-import educationprogram3 from "./../../assets/images/mother-daughter-having-fun-with-paint@2x.jpg";
-import educationprogram4 from "./../../assets/images/pexels-cottonbro-3662803@2x.jpg";
-import educationprogram5 from "./../../assets/images/pexels-cottonbro-3662800-1@2x.jpg";
-import educationprogram6 from "./../../assets/images/front-view-children-playing-together-kindergarten@2x (1).jpg";
+import banner1 from '/asset/images/banner 1080-566px.png'
+import banner2 from '/asset/images/banner 1080-566px.png'
+import banner3 from '/asset/images/banner 1080-566px.png'
+import educationprogram1 from "/asset/images/front-view-children-playing-together-kindergarten@2x (1).jpg";
+import educationprogram2 from "/asset/images/pexels-cottonbro-3662628@2x.jpg";
+import educationprogram3 from "/asset/images/mother-daughter-having-fun-with-paint@2x.jpg";
+import educationprogram4 from "/asset/images/pexels-cottonbro-3662803@2x.jpg";
+import educationprogram5 from "/asset/images/pexels-cottonbro-3662800-1@2x.jpg";
+import educationprogram6 from "/asset/images/front-view-children-playing-together-kindergarten@2x (1).jpg";
 function Home() {
   var settings = {
     dots: false,

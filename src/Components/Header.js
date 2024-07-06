@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from './../assets/images/Kids Exercise - Jeeva Joy Logo.png'
+import Logo from '/asset/images/Kids Exercise - Jeeva Joy Logo.png'
 
 function Header() {
     useEffect(()=>{

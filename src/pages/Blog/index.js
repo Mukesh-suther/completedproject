@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import './blog.css'
-import img1 from './../../assets/images/pexels-cottonbro-3662800-1@2x-676x510.jpg';
-import img2 from './../../assets/images/front-view-children-playing-together-kindergarten@2x-676x510.jpg';
-import img3 from './../../assets/images/shutterstock_583045492@2x-720x510.jpg';
+import img1 from '/asset/images/pexels-cottonbro-3662800-1@2x-676x510.jpg';
+import img2 from '/asset/images/front-view-children-playing-together-kindergarten@2x-676x510.jpg';
+import img3 from '/asset/images/shutterstock_583045492@2x-720x510.jpg';
 import { Link } from 'react-router-dom';
 
 const BlogCard = ({ href, imgSrc, editorName, duration, description }) => (
