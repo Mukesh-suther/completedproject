@@ -17,13 +17,27 @@ function Home() {
   var settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     speed: 1500,
     autoplaySpeed: 5000,
     pauseOnHover: true,
     responsive: [
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
       {
         breakpoint: 1024,
         settings: {

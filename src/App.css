@@ -125,7 +125,7 @@ header .header_logo a{
     justify-content: center;
 }
 header .header_logo a img{
-    /* max-width: 81.63px; */
+    max-width: 168.63px;
     width: 100%;
     transform: rotate(348deg);
 }
@@ -394,9 +394,10 @@ header .mobileheader{
     overflow: hidden;
   }
   .header .headerinner {
-   max-width: 1170px;
+   max-width: 100%;
    margin: auto;
 }
+
   @media only screen and (max-width:1302px){
     .header{
       padding: 0px;
@@ -444,7 +445,7 @@ header .mobileheader{
       margin: 0px;
     }
     footer > div {
-      max-width: 1024px;
+      max-width: 100%;
       grid-template-columns: repeat(3, 1fr);
   }
   .footer > div > div{
