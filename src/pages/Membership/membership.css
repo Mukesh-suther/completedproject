@@ -1,0 +1,156 @@
+.membershipcardsmain{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 40px;
+}
+.membershipcardsmain > div{
+    box-shadow: 0px 20px 80px 0px rgba(52, 54.000000000000014, 65, 0.08);
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.membershipcardsmain > div:hover{
+    box-shadow:0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+}
+#sliverplan p{
+    color: #CC7851;
+}
+.membershipcardsmain > div .membershipcards_upperpart{
+    padding-top: 15px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    border-bottom: 1px solid #F1F2F5;
+    padding-right: 35px;
+}
+.membershipcardsmain > div .membershipcards_upperpart h2{
+    font-family: "Nunito", Sans-serif;
+    font-size: 46px;
+    text-align: center;
+    font-weight: 700;
+    margin: 15px 0px 20px 0px;
+    color: #2D4162;
+}
+.membershipcardsmain > div .membershipcards_upperpart h2 small{
+    color: #2d4162;
+    font-size: 13px;
+    font-weight: 700;
+}
+.membershipcardsmain > div .membershipcards_bottompart{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 54px;
+    padding-right: 54px;
+}
+.membershipcardsmain > div .membershipcards_bottompart svg{
+    height: 12px;
+    width: 12px;
+    fill: #CC7851;
+    color: #CC7851;
+}
+.membershipcardsmain .package_listitem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #565A62;
+    font-family: "Nunito", Sans-serif;
+}
+.membershipcardsmain .package_listitem .list-bullent{
+    font-size: 12px;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #CC7851;
+    background-color: #FCF5F3;
+
+}
+.membershipcardsbtn{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: #CC7851;
+    fill: #CC7851;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAF1EC;
+    border-radius: 6px 6px 6px 6px;
+    padding: 18.5px 37px;
+    cursor: pointer;
+    transition: .3s;
+    width: fit-content;
+    margin: auto;
+    margin-top: 35px;
+}
+.membershipcardsbtn svg{
+    height: 16px !important;
+    width: 16px !important;
+    color: white !important;
+    transition: .3s;
+    transform: translateY(3px);
+    opacity: 0;
+    fill: white !important;
+}
+#goldplan .membershipcards_title{
+    color: #333799;
+}
+#schoolplan .membershipcards_title{
+    color: #49C193;
+}
+#goldplan svg{
+    fill: #333799;
+    color: #333799;
+}
+#schoolplan svg{
+    fill: #49C193;
+    color: #49C193;
+}
+#sliverplan .membershipcardsbtn:hover{
+    color: #FFFFFF;
+    background-color: #CC7851;
+}
+.membershipcardsbtn:hover svg{
+    opacity: 1;
+    transform: translateX(17px) translateY(3px);
+}
+.membershipcardsbtn sm{
+    transition: .5s;
+}
+.membershipcardsbtn:hover sm{
+    opacity: 1;
+    transform: translateX(-17px);
+}
+#goldplan > div.membershipcards_bottompart > a:hover{
+    color: #4D68F9 !important;
+    background: white !important;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .12);
+}
+#schoolplan > div.membershipcards_bottompart > a:hover{
+    color: #FFFFFF !important;
+    background: #49C193 !important;
+}
+#goldplan a.membershipcardsbtn:hover{
+    color: #4D68F9 !important;
+    background: white !important;
+}
+#schoolplan a.membershipcardsbtn:hover{
+    color: #FFFFFF !important;
+    background-color: #49C193 !important;
+}
+@media only screen and (max-width: 768px) {
+    .sqs-row > div > div:nth-child(8){
+        display:flex;
+        flex-direction:column-reverse !important;
+        } 
+        .membershipcardsmain{
+            grid-template-columns: 1fr;
+        }
+}

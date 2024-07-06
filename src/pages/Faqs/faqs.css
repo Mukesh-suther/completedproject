@@ -1,0 +1,96 @@
+.columns-main{
+    display: grid;
+    grid-template-columns: 42% 58%;
+}
+.columns-main > div{
+    padding: 15px;
+}
+.columns-main .img_main{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.faq-title{
+    margin: 0em 0em 0.65em 0em;
+    color: #2D4162;
+    font-size: 50px;
+    font-weight: bolder;
+    padding-bottom: 0px;
+    text-align: left;
+    line-height: 1.1em;
+    letter-spacing: -0.5px;
+}
+
+.accordion {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    overflow: hidden;
+  }
+  
+  .accordion-title {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 19px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+    padding: .93em 0;
+    font-family: "Nunito Sans", sans-serif;
+   }
+  
+  .accordion-title::after {
+    content: attr(symobl);
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-content {
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    transition: max-height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .accordion-item .accordion-content {
+    padding: 1em 0px;
+  }
+  .accordion-item .accordion-content p{
+    text-align: left;
+    margin-bottom: 1.5em;
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .accordion-item .accordion-content p:last-child{
+    margin-bottom: 0px;
+  }
+  .closesign{
+    display: none;
+  }
+  .accordion-title span{
+    font-size: 20px;
+    margin-right: 0px;
+    margin-left: auto;
+  }
+  .accordion-item.active .closesign{
+    display: block;
+  }
+  .accordion-item.active .opensign{
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .columns-main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }

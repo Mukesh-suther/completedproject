@@ -1,0 +1,86 @@
+.cards_main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.cards_main .appcards{
+    display: grid;
+    grid-template-columns: 22.333% calc(57.139% - 40px) 20.157%;
+    padding: 15px 25px;
+    background: white;
+    border-style: solid;
+    border: none;
+    gap: 20px;
+    border-color: #F8F8FD;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    width: 100%;
+    box-shadow: 0px 26px 59px 0px rgba(85.00000000000001, 92.99999999999999, 131, 0.07);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.cards_main .appcards > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.cards_main .appcards h4{
+    font-size: 19px;
+    margin-right: auto;
+    color: #2D4162;
+    font-family: "Averia Sans Libre", Sans-serif;
+    font-weight: 800;
+    line-height: 1.2em;
+    
+    letter-spacing: 0px;
+}
+.cards_main .appcards a{
+    color: #5B44FF;
+    fill: #5B44FF;
+    background-color: #02010100;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 100px 100px 100px 100px;
+    padding: 0.85em 1.75em 0.85em 1.75em;
+    font-family: "Averia Sans Libre", Sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.25em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    margin-left: auto;
+    transition: all .3s;
+}
+.cards_main .appcards a:hover{
+    color: #FFFFFF;
+    background-color: #5B44FF;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #5B44FF;
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .12);
+}
+.cards_main .appcards a.disabled{
+    border-color: #787878;
+    color: #787878;
+}
+.cards_main .appcards a.disabled:hover{
+    background-color: #787878;
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+    .cards_main .appcards{
+        grid-template-columns: calc(100% - 120px) 108px;
+        gap: 10px;
+        padding: 10px;
+    }
+    .cards_logo{
+        display: none !important;
+    }
+    .cards_main .appcards a{
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+}

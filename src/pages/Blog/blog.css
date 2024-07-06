@@ -1,0 +1,120 @@
+.cards-container {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px auto;
+    gap: 30px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+    height: 100%;
+    overflow: hidden;
+    transition: box-shadow .65s, transform .65s;
+    transition-timing-function: cubic-bezier(.23,1,.32,1);
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: transform 1s cubic-bezier(.23,1,.32,1);
+}
+.card .card-img{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.card .card-description {
+
+    font-size: 21px;
+    color: black;
+    line-height: 30px;
+    font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+    text-align: left;
+    font-family: "Averia Sans Libre", Sans-serif;
+    padding-bottom: 0px;
+}
+
+.card .data .duration {
+    color: rgba(24, 27, 49, 0.589);
+    font-size: 11px;
+    line-height: 23px;
+    font-weight: 200;
+
+}
+.card .data .blog-editorname::after{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    flex-shrink: 0;
+    margin-inline-start: 1.3636363636em;
+    border-radius: 50em;
+    background-color: currentColor;
+    vertical-align: middle;
+    opacity: .35;
+}
+.card .data p {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    line-height: 23px;
+    font-weight: 100;
+}
+
+.card .data span {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 40px;
+    color: rgba(45, 65, 98, 0.555);
+    line-height: 48px;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.card .data {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.card .card_text{
+    padding: 2rem;
+}
+.card:hover .card-img img{
+    transform: scale(1.15);
+    transition-duration: 10s;
+}
+.card:hover{
+    box-shadow: 0 25px 55px rgba(0, 0, 0, .075);
+    transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 1199px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 808px) {
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .title {
+        font-size: 30px;
+    }
+}
